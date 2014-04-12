@@ -1,0 +1,4 @@
+Traffana
+========
+
+Develop a tool, traffana, to display packet, bytes and flow statistics for IPv4 packets observed per time epoch.  traffana -v [-r filename] [-i interface] [-T epoch] [ -w filename ] [-z {2|5} ]  It should support the following command line options -r, --read 	Read the specified pcap file. -i, --int 	Listen on the specified interface. -T, --time 	Print out packet and byte counts for the specified time epoch. If epoch is not specified, assume an epoch duration of one second. -z, --track 	Count the number of flows based on the specified tuple. Valid arguments are 2 for two-tuple tracking and 5 for five-tuple tracking. -v, --verbose 	Also print out packet and byte counts based on the procotol specified in the IP header. The tool currently supports tcp, udp and icmp. -w, --write 	Write the packet counts to a specified filename. If filename is not specified, write to stdout  When run without any options, it should print the usage instructions and exit.
